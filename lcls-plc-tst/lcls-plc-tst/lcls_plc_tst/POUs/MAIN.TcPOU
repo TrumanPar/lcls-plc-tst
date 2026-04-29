@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="MAIN" Id="{93f0cc46-ee06-47a7-bfaf-d9ed4a72d957}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	{attribute 'pytmc' := 'pv: TEST:NEODRY:01'}
+	test : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[test_pump();]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

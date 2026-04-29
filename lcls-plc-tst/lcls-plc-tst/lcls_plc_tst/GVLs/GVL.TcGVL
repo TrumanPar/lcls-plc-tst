@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <GVL Name="GVL" Id="{0acfbf58-c293-432d-bc72-712ea2715479}">
+    <Declaration><![CDATA[//{attribute 'qualified_only'}
+VAR_GLOBAL
+	{attribute 'pytmc' := 'pv: TEST:PUMP:KASHIYAMA'}
+	{attribute 'TcLinkTo' := 	'.q_xRunDO 			:=	TIIB[Term 5 (EL2794)]^Channel 1^Output;
+                                 .q_xRemote		:=	TIIB[Term 5 (EL2794)]^Channel 2^Output;
+                                 .q_xLspdDo			:=	TIIB[Term 5 (EL2794)]^Channel 3^Output;
+                                 .q_xResetDo 		:=	TIIB[Term 5 (EL2794)]^Channel 4^Output;
+                                 .i_xAlarm	:=	TIIB[Term 6 (EL1004)]^Channel 2^Input;
+                                 .i_xIsRun	:=	TIIB[Term 6 (EL1004)]^Channel 1^Input
+    '}
+	test_pump : FB_KashiyamaPump_G;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

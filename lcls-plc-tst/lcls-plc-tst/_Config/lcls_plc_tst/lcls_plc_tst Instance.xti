@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.17" ClassName="CTComPlcObjDef">
+	<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" XtvPath="lcls_plc_tst\lcls_plc_tst Instance.xtv" TmcPath="lcls_plc_tst\lcls_plc_tst.tmc">
+		<Name>__FILENAME__</Name>
+		<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+		<Contexts>
+			<Context>
+				<Id>0</Id>
+				<Name>PlcTask</Name>
+				<ManualConfig>
+					<OTCID>#x02010030</OTCID>
+				</ManualConfig>
+				<Priority>20</Priority>
+				<CycleTime>10000000</CycleTime>
+			</Context>
+		</Contexts>
+		<TaskPouOids>
+			<TaskPouOid Prio="20" OTCID="#x08502001"/>
+		</TaskPouOids>
+	</Instance>
+	<Mappings>
+		<OwnerA>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EK1122)^Term 3 (EK1100)^Term 5 (EL2794)">
+				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xLspdDo" VarB="Channel 3^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xRemote" VarB="Channel 2^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xResetDo" VarB="Channel 4^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xRunDO" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EK1122)^Term 3 (EK1100)^Term 6 (EL1004)">
+				<Link VarA="PlcTask Inputs^GVL.test_pump.i_xAlarm" VarB="Channel 2^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL.test_pump.i_xIsRun" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
+</TcSmItem>
