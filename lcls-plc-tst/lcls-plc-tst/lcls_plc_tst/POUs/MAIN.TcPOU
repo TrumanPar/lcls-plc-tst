@@ -8,7 +8,9 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[test_pump();]]></ST>
+      <ST><![CDATA[test_pump();
+
+test_pump_2();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

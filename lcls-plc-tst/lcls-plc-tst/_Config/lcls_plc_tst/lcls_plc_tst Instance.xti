@@ -20,15 +20,15 @@
 	</Instance>
 	<Mappings>
 		<OwnerA>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EK1122)^Term 3 (EK1100)^Term 5 (EL2794)">
-				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xLspdDo" VarB="Channel 3^Output" AutoLink="true" Size="1"/>
-				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xRemote" VarB="Channel 2^Output" AutoLink="true" Size="1"/>
-				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xResetDo" VarB="Channel 4^Output" AutoLink="true" Size="1"/>
-				<Link VarA="PlcTask Outputs^GVL.test_pump.q_xRunDO" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 9 (EK1200)^Term 10 (EK1122)^Box 16 (EP2338-0002)">
+				<Link VarA="PlcTask Inputs^GVL.test_pump_2.i_xAlarm" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Inputs^GVL.test_pump_2.i_xIsRun" VarB="Channel 2^Input" AutoLink="true" Size="1"/>
 			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EK1122)^Term 3 (EK1100)^Term 6 (EL1004)">
-				<Link VarA="PlcTask Inputs^GVL.test_pump.i_xAlarm" VarB="Channel 2^Input" AutoLink="true" Size="1"/>
-				<Link VarA="PlcTask Inputs^GVL.test_pump.i_xIsRun" VarB="Channel 1^Input" AutoLink="true" Size="1"/>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 9 (EK1200)^Term 10 (EK1122)^Box 17 (EP2624-0002)">
+				<Link VarA="PlcTask Outputs^GVL.test_pump_2.q_xLspdDo" VarB="Channel 3^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.test_pump_2.q_xRemote" VarB="Channel 2^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.test_pump_2.q_xResetDo" VarB="Channel 4^Output" AutoLink="true" Size="1"/>
+				<Link VarA="PlcTask Outputs^GVL.test_pump_2.q_xRunDO" VarB="Channel 1^Output" AutoLink="true" Size="1"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

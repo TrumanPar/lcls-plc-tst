@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4026.17" ClassName="CTComPlcObjDef">
-	<Instance TmcHash="{773A326C-67A5-9A67-4AFC-202DD8794097}">
+	<Instance TmcHash="{82B18669-1B00-DC68-EEB4-2CD55F1605D5}">
 		<Vars VarGrpType="1">
 			<Name>PlcTask Inputs</Name>
 			<Var>
@@ -10,6 +10,15 @@
 			</Var>
 			<Var>
 				<Name>GVL.test_pump.i_xIsRun</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL.test_pump_2.i_xAlarm</Name>
+				<Comment><![CDATA[ Input ]]></Comment>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL.test_pump_2.i_xIsRun</Name>
 				<Type>BOOL</Type>
 			</Var>
 		</Vars>
@@ -30,6 +39,23 @@
 			</Var>
 			<Var>
 				<Name>GVL.test_pump.q_xRemote</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL.test_pump_2.q_xRunDO</Name>
+				<Comment><![CDATA[ Output ]]></Comment>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL.test_pump_2.q_xResetDo</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL.test_pump_2.q_xLspdDo</Name>
+				<Type>BOOL</Type>
+			</Var>
+			<Var>
+				<Name>GVL.test_pump_2.q_xRemote</Name>
 				<Type>BOOL</Type>
 			</Var>
 		</Vars>
