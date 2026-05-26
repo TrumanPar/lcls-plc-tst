@@ -18,8 +18,8 @@ VAR_GLOBAL
                                  .q_xRemote		:=	TIIB[Box 17 (EP2624-0002)]^Channel 2^Output;
                                  .q_xLspdDo			:=	TIIB[Box 17 (EP2624-0002)]^Channel 3^Output;
                                  .q_xResetDo 		:=	TIIB[Box 17 (EP2624-0002)]^Channel 4^Output;
-                                 .i_xAlarm	:=	TIIB[Box 16 (EP2338-0002)]^Channel 1^Input;
-                                 .i_xIsRun	:=	TIIB[Box 16 (EP2338-0002)]^Channel 2^Input
+                                 .i_xAlarm	:=	TIIB[Box 16 (EP2338-0002)]^Channel 2^Input;
+                                 .i_xIsRun	:=	TIIB[Box 16 (EP2338-0002)]^Channel 1^Input
     '}
 	test_pump_2 : FB_KashiyamaPump_G;
 	
